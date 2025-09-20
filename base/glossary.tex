@@ -1,0 +1,24 @@
+\renewcommand{\glsnamefont}[1]{\textbf{#1}}
+\renewcommand{\glossarysection}[2][]{}
+\setglossarystyle{long}
+
+\newglossaryentry{term}
+{
+    name=termins,
+    description={
+            Vārds vai vārdu savienojums, kas apzīmē noteiktu jēdzienu un kam ir specializēta nozīme, lietošanas joma}
+}
+
+\newglossaryentry{latex}
+{
+    name=LaTeX,
+    description={
+            Programmatūra dokumentu sagatavošanai}
+}
+
+\section*{Terminu un apzīmējumu saraksts}
+\addcontentsline{toc}{section}{Terminu un apzīmējumu saraksts}
+\begin{spacing}{0.5}
+    \glsaddall
+    \printglossaries
+\end{spacing}

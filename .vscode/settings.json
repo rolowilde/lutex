@@ -1,0 +1,18 @@
+{
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "latex": false,
+        "bibtex": false,
+    },
+    "editor.wordWrap": "on",
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "workbench.editorAssociations": {
+        "*.pdf": "latex-workshop-pdf-hook",
+    },
+    "latex-workshop.formatting.latex": "latexindent",
+    "latex-workshop.latex.recipe.default": "latexmk (lualatex)",
+    "latex-workshop.latex.outDir": "./out/",
+}

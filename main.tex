@@ -1,0 +1,79 @@
+\documentclass[12pt]{article}
+
+\usepackage[latvian]{babel}
+\usepackage[none]{hyphenat}
+\usepackage{setspace}
+\usepackage{blindtext}
+
+\usepackage
+[
+a4paper,
+left=3cm,
+right=2cm,
+top=2cm,
+bottom=2cm,
+]
+{geometry}
+
+\usepackage{fontspec}
+\setmainfont{Stix Two Text}
+
+% disabled for faster compile
+% \usepackage{unicode-math}
+% \setmathfont{Stix Two Math}
+
+\usepackage{titlesec}
+\titlespacing{\section}{0pt}{0.5\baselineskip}{0.5\baselineskip}
+\titlespacing{\subsection}{0pt}{0.5\baselineskip}{0.5\baselineskip}
+\titlespacing{\subsubsection}{0pt}{0.5\baselineskip}{0.5\baselineskip}
+\titleformat*{\section}{\fontsize{14}{17}\mdseries\centering\MakeUppercase}
+\titleformat*{\subsection}{\fontsize{12}{15}\bfseries}
+\titleformat*{\subsubsection}{\fontsize{12}{15}\bfseries}
+
+\usepackage{graphicx}
+\usepackage[
+    font={small},
+    textfont={bf},
+    labelfont={it},
+    labelsep={space},
+    figurename={},
+    tablename={},
+]
+{caption}
+
+% full label in refs
+\renewcommand{\thefigure}{\arabic{section}.\arabic{figure}. att.}
+\renewcommand{\thetable}{\arabic{section}.\arabic{table}. tabula}
+
+\usepackage{biblatex}
+\addbibresource{references.bib}
+
+\usepackage[nonumberlist]{glossaries}
+\makeglossaries
+
+\usepackage{tocloft}
+\usepackage{hyperref}
+% titlesec hyperref fix, section always on new page
+\newcommand{\sectionbreak}{\clearpage\phantomsection}
+
+\linespread{1.5}
+\setlength{\parindent}{1cm}
+
+\begin{document}
+
+\include{base/title}
+\include{base/abstract}
+\include{base/toc}
+\include{base/glossary}
+\include{base/intro}
+
+%%% SECTIONS %%%
+
+\include{sections/example}
+
+%%%%%%%%%%%%%%%%
+
+\include{base/conclusion}
+\include{base/references}
+
+\end{document}
