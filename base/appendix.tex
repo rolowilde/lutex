@@ -1,9 +1,9 @@
 \section*{Pielikumi}
 \addcontentsline{toc}{section}{Pielikumi}
+\renewcommand{\addcontentsline}[3]{}
 \begin{appendices}
     \renewcommand{\thesection}{\arabic{section}.~pielikums}
     \titleformat{\section}[display]{\raggedleft}{\thesection}{-1ex}{}
-    \addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
 
     \section{Garš teksts A}\label{app:a}
     \Blindtext
