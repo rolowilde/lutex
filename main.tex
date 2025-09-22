@@ -1,7 +1,6 @@
 \documentclass[12pt]{article}
 
 \usepackage[latvian]{babel}
-\usepackage[none]{hyphenat}
 \usepackage{setspace}
 \usepackage{enumitem}
 \usepackage{appendix}
@@ -57,6 +56,10 @@ bottom=2cm,
 % titlesec hyperref fix, section always on new page
 \newcommand{\sectionbreak}{\clearpage\phantomsection}
 
+\tolerance=9999
+\emergencystretch=10pt
+\hyphenpenalty=10000
+\exhyphenpenalty=100
 \linespread{1.5}
 \setlength{\parindent}{1cm}
 
