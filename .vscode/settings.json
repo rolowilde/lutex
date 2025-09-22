@@ -15,4 +15,5 @@
     "latex-workshop.formatting.latex": "latexindent",
     "latex-workshop.latex.recipe.default": "latexmk (lualatex)",
     "latex-workshop.latex.outDir": "./out/",
+    "latex-workshop.message.badbox.show": "none"
 }
