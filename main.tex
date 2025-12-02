@@ -41,7 +41,16 @@ bottom=2cm,
 ]
 {caption}
 
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{array}
+\renewcommand{\arraystretch}{1.5}
 \captionsetup[table]{position=t,justification=raggedleft,slc=off}
+
+\makeatletter
+\@addtoreset{figure}{section}
+\@addtoreset{table}{section}
+\makeatother
 
 % full label in refs
 \renewcommand{\thefigure}{\arabic{section}.\arabic{figure}.~att.}
